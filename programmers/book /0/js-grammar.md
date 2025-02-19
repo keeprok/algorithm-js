@@ -17,3 +17,36 @@
   - 함수 연산에서 많은 오차를 발생하는 이유중 하나 부동 소수점을 사용하면 엡실론 때문에 통과가 되지않을 수있다
 
 ### (2) 문자열
+
+- 문자열을 지정하는 방법
+  - "" , '' , \``
+- 백틱의 기능
+  - 템플릿 리터럴 ( 문자열내에 넣을수있다 )
+  - 여러 줄 문자열을 만들수 있다
+- 문자열 타입 연산
+
+  - let a = "hello ," ; let b = "world"
+  - (a + b) = "hello , world " / 문자열 끼리 더하기
+  - (a + 123)= "hello , 123" / 문자열 과 숫자 더하기
+  - (a + true) = "hello , true" / 문자열과 불리언 더하기
+
+#### 문자열 타입 빌트인 메서드
+
+```
+const a= "hello , world"
+
+a.length // 문자열 길이
+sploit // 나누기
+startsWith("hello") // 특정 문자열로 시작하는 지 확인
+endsWith("world") // 특정문자열 로끝나는지 확인
+includes("llo,") // 특정문자열 포함
+indexof("world")// 특정문자열 시작위치 확인
+lastIndexof("l") // 특정문자열 마지막 위치
+replce("world" , "javaScript") // 문자열 대체 // hello , javaScript
+toUpperCase // 대문자로 변환
+toLowerCase // 소문자로 변환
+trim // 양쪽 공백 제거
+concat("ㅣㅣㅇㅇ") // 문자열 연결 //hello , worldㅣㅣㅇㅇ
+```
+
+그외 타입은 간단해서 작성 하지않겠습니다
