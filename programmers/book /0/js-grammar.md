@@ -66,3 +66,23 @@ concat("ㅣㅣㅇㅇ") // 문자열 연결 //hello , worldㅣㅣㅇㅇ
 - 변경시에도 메모리를 새로 할당하지않음
 
 ## 오브젝트
+
+```
+const obj = {
+  name : 'Sunhyoup',
+  age : 30
+  'full-name' = 'Sunhyoup Lee'
+}
+일반언급 = console.log(obj.name) // Sunhyoup
+특수언급 = console.log(obj['age'])// 30 // 키에 특수문자가 들어가는 경우 ['key']형태로만 접근 가능
+
+요소 추가
+obj.firstName = Lee
+console.log(obj.firstName) //Lee
+
+요소 삭제
+delete obj.firstName
+console.log(obj.firstName) // undefined
+```
+
+## 배열
